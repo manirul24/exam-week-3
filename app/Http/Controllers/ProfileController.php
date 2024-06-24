@@ -48,7 +48,7 @@ $httpOnly = "true";
 
         return response($data)->cookie(
             $name,$value,$minutes,$path,$domain,$secure,$httpOnly
-        );
+        )->setStatusCode(200);
 
 
 }
